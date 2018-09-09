@@ -1,0 +1,100 @@
+body{margin-top: 0;}
+
+.theme-nav.affix{width: 100%;top: 0;z-index: 9999;background-color: rgba(255,255,255,.90);box-shadow: 0 1px 4px rgba(0,0,0,.1)}
+.theme-nav.affix ul{border-bottom: none;background-color: transparent;}
+.theme-nav ul{margin-right: 375px;background-color: #fbfbfb;padding-top: 10px;border-bottom: 2px solid #eee;line-height: 45px;text-align: center;font-size: 18px;height: 57px;border-radius: 3px 3px 0 0}
+.theme-nav li{float: left;width:20%;}
+.theme-nav li a{color: #999;display: block;border-bottom: 2px solid transparent;}
+.theme-nav li a:hover{color: #666;border-color: #ddd;}
+.theme-nav li.active a{color: #61B3E6;border-bottom-color: #61B3E6;}
+
+.theme-contents{background-color: #fff;margin-right: 375px;margin-bottom: 15px;padding: 20px;border-radius: 0 0 3px 3px}
+
+.theme-content h2{font-size: 20px;margin: 50px -20px 30px -20px;font-weight: normal;background-color: #f9f9f9;height: 42px;}
+.theme-content h2 strong{background-color: #61B3E6;float: left;padding: 10px 20px;font-weight: normal;color: #fff;}
+
+.theme-content{line-height: 25px;}
+.theme-content h3{font-size: 16px;font-weight: bold;margin-bottom: 20px;border-bottom: 1px dotted #e6e6e6;padding-bottom: 10px;}
+.theme-content ul{list-style: disc;margin-left: 40px;margin-bottom: 50px;}
+.theme-content ol{list-style: decimal-leading-zero;margin-left: 50px;margin-bottom: 50px;}
+.theme-content li{margin-bottom: 5px;}
+
+.theme-content table{width: 100%;border-top: 1px solid #e9e9e9;border-left: 1px solid #e9e9e9;}
+.theme-content table th{background-color: #F9F9F9;}
+.theme-content table th, .theme-content table td{padding: 5px 15px;border-bottom: 1px solid #e9e9e9;border-right: 1px solid #e9e9e9;}
+.theme-content table tr:nth-child(even){background-color: #f9f9f9;}
+
+.theme-aq{padding-bottom: 20px;}
+
+.theme-sidebar{position: absolute;top: -57px;right: 0;width: 360px;}
+/*.theme-desc{background-color: #fff;padding: 15px;}*/
+.theme-widget{margin-bottom: 20px;}
+.theme-desc h3{background-color: #61B3E6;margin: 0;padding: 0 15px;line-height: 57px;color: #fff;font-size: 20px;border-radius: 3px 3px 0 0;text-align: center;}
+.theme-desc dl{clear: both;padding-left: 100px;margin: 0 0 1px;font-size: 12px;background-color: #fff;}
+.theme-desc dt{width: 100px;padding: 12px;float: left;margin-left: -100px;text-align: right;}
+.theme-desc dd{padding: 12px;border-left: 1px solid #f1f1f1;}
+
+.theme-focus{
+    background-color: #61B3E6;
+    padding: 120px 20px;
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+    margin-bottom: 15px;
+}
+.theme-header{float: left;width: 48%;}
+.theme-thumbnail{float: right;width: 48%;text-align: right;}
+
+.theme-focus h1{
+    margin: 0;
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 15px;
+}
+.theme-focus h1 a{
+    color: #fff;
+}
+.theme-focus h2{
+    margin: 0;
+    font-size: 18px;
+}
+.theme-focus h3{
+    margin: 0;
+    font-size: 14px;
+    font-weight: normal;
+}
+.theme-focus h3 b{font-weight: normal;padding: 4px 10px 5px;background-color: #fff;margin-right: 5px;color: #FF6A5F;border-radius: 2px;}
+
+.theme-button{border: 1px solid #fff;color: #fff;font-size: 18px;border-radius: 3px;display: inline-block;padding: 12px 36px;margin-right: 20px;}
+.theme-button-presell{color: #ff0;}
+.theme-button:hover{color: #61B3E6;background-color: #fff;}
+
+.theme-price{font-size: 36px;padding: 30px 0}
+.theme-price dfn{font-style: normal;font-size: 18px;margin-right: 2px;}
+
+
+.theme-thumbnail img{max-width: 100%;}
+
+.theme-alert{font-size: 12px;color: #fff;padding-top: 30px;margin-bottom: 0;}
+
+
+
+
+
+
+.theme-button,
+{-webkit-transition:all linear .218s;-moz-transition:all linear .218s;transition:all linear .218s}
+
+@media (max-width:979px){
+    .cba{display: none;}
+    .theme-focus{padding: 50px 0 40px;}
+    .theme-focus .container{text-align: center;}
+    .theme-thumbnail{width: 100%;float: none;text-align: center;margin-bottom: 30px;}
+    .theme-fns li{width: 33.3333333%}
+}
+@media (max-width:560px){
+    .theme-fns li{width: 50%}
+}
+@media (max-width:480px){
+    .theme-fns li{width: 100%}
+}
