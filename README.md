@@ -49,8 +49,6 @@ git clone https://github.com/her-cat/ThinkBlog.git
 
 ![image](https://raw.githubusercontent.com/her-cat/ThinkBlog/master/example/评论.png)
 
-![image](https://raw.githubusercontent.com/her-cat/ThinkBlog/master/example/评论.png)
-
 后台页面
 
 ![image](https://raw.githubusercontent.com/her-cat/ThinkBlog/master/example/后台登录.png)
