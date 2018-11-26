@@ -172,7 +172,7 @@ INSERT INTO `hxh_config` VALUES ('15', 'is_gravatar', 'n');
 INSERT INTO `hxh_config` VALUES ('16', 'comment_order', 'new');
 INSERT INTO `hxh_config` VALUES ('17', 'is_thumb', 'n');
 INSERT INTO `hxh_config` VALUES ('18', 'icp', '123456');
-INSERT INTO `hxh_config` VALUES ('19', 'footer_info', 'Copyright © 2016 her-cat.com All rights reserved. \r\n&lt;div style=&quot;display:none;&quot;&gt;\r\n&lt;script&gt;\r\nvar _hmt = _hmt || [];\r\n(function() {\r\n  var hm = document.createElement(&quot;script&quot;);\r\n  hm.src = &quot;https://hm.baidu.com/hm.js?88f5a4f5d1e548a672c5231b4a22631e&quot;;\r\n  var s = document.getElementsByTagName(&quot;script&quot;)[0]; \r\n  s.parentNode.insertBefore(hm, s);\r\n})();\r\n&lt;/script&gt;\r\n&lt;script type=&quot;text/javascript&quot;&gt;\r\n(function(){\r\n    var bp = document.createElement(\'script\');\r\n    var curProtocol = window.location.protocol.split(\':\')[0];\r\n    if (curProtocol === \'https\') {\r\n        bp.src = \'https://zz.bdstatic.com/linksubmit/push.js\';        \r\n    }\r\n    else {\r\n        bp.src = \'http://push.zhanzhang.baidu.com/push.js\';\r\n    }\r\n    var s = document.getElementsByTagName(&quot;script&quot;)[0];\r\n    s.parentNode.insertBefore(bp, s);\r\n})();\r\n&lt;/script&gt;\r\n\r\n&lt;/div&gt;\r\n&amp;nbsp;&amp;nbsp;由&lt;a href=&quot;https://www.vpsv.cn/aff.php?aff=69&quot; target=&quot;_blank&quot;&gt;&lt;strong&gt;主机云&lt;/strong&gt;&lt;/a&gt;托管');
+INSERT INTO `hxh_config` VALUES ('19', 'footer_info', 'Copyright © 2016 her-cat.com All rights reserved.');
 INSERT INTO `hxh_config` VALUES ('20', 'blog_keywords', '何湘辉,个人博客,PHP实例,PHP采集');
 INSERT INTO `hxh_config` VALUES ('21', 'blog_description', '欢迎来到何湘辉博客，一个记录PHP学习笔记的博客，爱分享网络资源，分享学到的知识，分享生活的乐趣。网址是thinkblog.com');
 
