@@ -21,7 +21,7 @@ CREATE TABLE `hxh_article` (
   `view_num` int(11) NOT NULL COMMENT '浏览量',
   `post_time` int(11) NOT NULL COMMENT '发布时间',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=92 DEFAULT CHARSET=utf8 COMMENT='文章表';
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='文章表';
 
 -- ----------------------------
 -- Table structure for hxh_article_tag
@@ -32,7 +32,7 @@ CREATE TABLE `hxh_article_tag` (
   `aid` int(11) NOT NULL DEFAULT '0' COMMENT '文章ID',
   `tid` int(11) NOT NULL DEFAULT '0' COMMENT '标签ID',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=123 DEFAULT CHARSET=utf8 COMMENT='文章标签表';
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='文章标签表';
 
 -- ----------------------------
 -- Table structure for hxh_category
@@ -45,7 +45,7 @@ CREATE TABLE `hxh_category` (
   `taxis` int(6) NOT NULL COMMENT '分类排序',
   `parent_id` int(11) NOT NULL COMMENT '父级ID',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=12 DEFAULT CHARSET=utf8 COMMENT='分类表';
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='分类表';
 
 -- ----------------------------
 -- Table structure for hxh_comment
@@ -64,7 +64,7 @@ CREATE TABLE `hxh_comment` (
   `is_hide` enum('n','y') DEFAULT 'n' COMMENT '是否隐藏',
   `post_time` int(11) NOT NULL COMMENT '评论时间',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=622 DEFAULT CHARSET=utf8 COMMENT='评论表';
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='评论表';
 
 -- ----------------------------
 -- Table structure for hxh_config
@@ -76,7 +76,7 @@ CREATE TABLE `hxh_config` (
   `value` text NOT NULL COMMENT '配置值',
   PRIMARY KEY (`id`),
   UNIQUE KEY `name` (`name`)
-) ENGINE=MyISAM AUTO_INCREMENT=22 DEFAULT CHARSET=utf8 COMMENT='配置表';
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='配置表';
 
 -- ----------------------------
 -- Table structure for hxh_file
@@ -92,7 +92,7 @@ CREATE TABLE `hxh_file` (
   `save_path` varchar(255) DEFAULT NULL COMMENT '文件保存路径',
   `post_time` int(11) NOT NULL COMMENT '文件上传时间',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=362 DEFAULT CHARSET=utf8 COMMENT='文件表';
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='文件表';
 
 -- ----------------------------
 -- Table structure for hxh_link
@@ -106,7 +106,7 @@ CREATE TABLE `hxh_link` (
   `is_hide` enum('n','y') NOT NULL DEFAULT 'n' COMMENT '是否隐藏',
   `taxis` int(10) unsigned DEFAULT '0' COMMENT '排序',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=15 DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC;
 
 -- ----------------------------
 -- Table structure for hxh_nav
@@ -121,7 +121,7 @@ CREATE TABLE `hxh_nav` (
   `is_hide` enum('n','y') NOT NULL DEFAULT 'n' COMMENT '是否隐藏',
   `taxis` int(10) unsigned NOT NULL DEFAULT '0' COMMENT '排序',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=23 DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC;
 
 -- ----------------------------
 -- Table structure for hxh_tag
@@ -131,7 +131,7 @@ CREATE TABLE `hxh_tag` (
   `id` int(11) NOT NULL AUTO_INCREMENT COMMENT '标签ID',
   `name` varchar(60) NOT NULL COMMENT '标签名',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=71 DEFAULT CHARSET=utf8 COMMENT='标签表';
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='标签表';
 
 -- ----------------------------
 -- Table structure for hxh_user
@@ -153,6 +153,7 @@ CREATE TABLE `hxh_user` (
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
+INSERT INTO `hxh_user` VALUES ('1', 'admin', '管理员', '/Head/20160911/57d4f77861213.jpg', 'e10adc3949ba59abbe56e057f20f883e', 'hxhsoft@foxmail.com', 'https://github.com/her-cat/ThinkBlog', '127.0.0.1', 'admin', '1', '0', '123456');
 
 INSERT INTO `hxh_config` VALUES ('1', 'blog_name', '何湘辉博客');
 INSERT INTO `hxh_config` VALUES ('2', 'blog_url', 'http://thinkblog.com');
@@ -175,5 +176,3 @@ INSERT INTO `hxh_config` VALUES ('18', 'icp', '123456');
 INSERT INTO `hxh_config` VALUES ('19', 'footer_info', 'Copyright © 2016 her-cat.com All rights reserved.');
 INSERT INTO `hxh_config` VALUES ('20', 'blog_keywords', '何湘辉,个人博客,PHP实例,PHP采集');
 INSERT INTO `hxh_config` VALUES ('21', 'blog_description', '欢迎来到何湘辉博客，一个记录PHP学习笔记的博客，爱分享网络资源，分享学到的知识，分享生活的乐趣。网址是thinkblog.com');
-
-INSERT INTO `hxh_user` VALUES ('1', 'admin', '管理员', '/Head/20160911/57d4f77861213.jpg', 'e10adc3949ba59abbe56e057f20f883e', 'hxhsoft@foxmail.com', 'https://github.com/her-cat/ThinkBlog', '127.0.0.1', 'admin', '1', '0', '123456');
