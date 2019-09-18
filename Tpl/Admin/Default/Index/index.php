@@ -27,11 +27,11 @@
 					<div class="col-md-2 col-sm-4">
 						<div class="panel b-a">
 							<div class="panel-heading no-border bg-info lt text-center">
-								<a href="{:U('Article/commentList')}"><i class="fa fa-comment fa fa-3x m-t m-b text-white"></i></a>
+								<a href="{:U('Comment/commentList')}"><i class="fa fa-comment fa fa-3x m-t m-b text-white"></i></a>
 							</div>
 							<div class="padder-v text-center clearfix">
 								<div class="col-xs-12 b-r">
-									<div class="h3 font-bold"><a href="{:U('Article/commentList')}">评论管理</a></div>
+									<div class="h3 font-bold"><a href="{:U('Comment/commentList')}">评论管理</a></div>
 								</div>
 							</div>
 						</div>
@@ -39,11 +39,11 @@
 					<div class="col-md-2 col-sm-4">
 						<div class="panel b-a">
 							<div class="panel-heading no-border bg-success lt text-center">
-								<a href="{:U('Article/tagList')}"><i class="fa fa-user fa fa-3x m-t m-b text-white"></i></a>
+								<a href="{:U('Tag/tagList')}"><i class="fa fa-user fa fa-3x m-t m-b text-white"></i></a>
 							</div>
 							<div class="padder-v text-center clearfix">
 								<div class="col-xs-12 b-r">
-									<div class="h3 font-bold"><a href="{:U('Article/tagList')}">标签管理</a></div>
+									<div class="h3 font-bold"><a href="{:U('Tag/tagList')}">标签管理</a></div>
 								</div>
 							</div>
 						</div>
@@ -51,11 +51,11 @@
 					<div class="col-md-2 col-sm-4">
 						<div class="panel b-a">
 							<div class="panel-heading no-border bg-danger lt text-center">
-								<a href="{:U('Category/CategoryList')}"><i class="i i-add-to-list icon fa fa-3x m-t m-b text-white"></i></a>
+								<a href="{:U('Category/categoryList')}"><i class="i i-add-to-list icon fa fa-3x m-t m-b text-white"></i></a>
 							</div>
 							<div class="padder-v text-center clearfix">
 								<div class="col-xs-12 b-r">
-									<div class="h3 font-bold"><a href="{:U('Category/CategoryList')}">分类管理</a></div>
+									<div class="h3 font-bold"><a href="{:U('Category/categoryList')}">分类管理</a></div>
 								</div>
 							</div>
 						</div>
