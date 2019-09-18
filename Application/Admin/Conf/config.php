@@ -11,5 +11,5 @@
 // | Author: her-cat<hxhsoft@foxmail.com>
 // +----------------------------------------------------------------------
 return array(
-    'DEFAULT_THEME' => 'default',
+    'DEFAULT_THEME' => 'Default',
 );
