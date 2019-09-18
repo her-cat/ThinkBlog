@@ -18,7 +18,7 @@ CREATE TABLE `hxh_article` (
   `is_draft` enum('n','y') NOT NULL DEFAULT 'n' COMMENT '是否为草稿',
   `open_comment` enum('n','y') NOT NULL DEFAULT 'y' COMMENT '开启评论',
   `comment_num` int(11) NOT NULL DEFAULT '0' COMMENT '评论数',
-  `view_num` int(11) NOT NULL COMMENT '浏览量',
+  `view_num` int(11) NOT NULL DEFAULT '0' COMMENT '浏览量',
   `post_time` int(11) NOT NULL COMMENT '发布时间',
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='文章表';
