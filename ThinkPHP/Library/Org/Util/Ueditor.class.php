@@ -160,15 +160,18 @@ class Ueditor{
 				'type'=>'.' . $info['ext'],
 				'size'=>$info['size'],
 			);
-            $image = new \Think\Image();
-            $image->open('./Uploads/Images/' . date('Ymd')  . '/' . $info['savename'])->water('./Public/Images/watermark.png', 9, 90)->save('./Uploads/Images/' . date('Ymd')  . '/' . $info['savename']);
-            M('File')->add(array('article_id' => I('get.aid'),
-                'user_id' => cookie('uid'),
-                'name' => $info['savename'],
-                'size' => $info['size'],
-                'mime' => $info['type'],
-                'save_path' =>  '/Uploads' . $info['savepath'] . $info['savename'],
-                'post_time' => time()));
+			
+			if (stripos($info['type'], 'image') !== false) {
+				$image = new \Think\Image();
+				$image->open('./Uploads/Images/' . date('Ymd')  . '/' . $info['savename'])->water('./Public/Images/watermark.png', 9, 90)->save('./Uploads/Images/' . date('Ymd')  . '/' . $info['savename']);
+				M('File')->add(array('article_id' => I('get.aid'),
+					'user_id' => cookie('uid'),
+					'name' => $info['savename'],
+					'size' => $info['size'],
+					'mime' => $info['type'],
+					'save_path' =>  '/Uploads' . $info['savepath'] . $info['savename'],
+					'post_time' => time()));
+			}
 		}
 		return json_encode($data);
 	}
